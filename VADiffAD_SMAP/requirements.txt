@@ -1,6 +1,0 @@
-# Choose an appropriate CPU/CUDA PyTorch build for your machine.
-numpy>=1.23,<2.0
-scipy>=1.9,<2.0
-scikit-learn>=1.2,<2.0
-PyYAML>=6.0,<7.0
-torch>=1.13,<3.0
