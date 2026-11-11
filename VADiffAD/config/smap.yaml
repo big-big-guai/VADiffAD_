@@ -1,0 +1,36 @@
+# VADiffAD SMAP main method (not an ablation configuration).
+dataset: SMAP
+data_file: data/SMAP.npz
+output_dir: runs/SMAP
+window: 100
+train_stride: 25
+eval_stride: 100
+timesteps: 1000
+beta_start: 0.0001
+beta_end: 0.02
+rho: 0.5
+cmin: 0.5
+cmax: 2.0
+hidden_dim: 64
+probe_nodes: 20
+path_intervals: 10
+retention_threshold: 0.2
+retention_delta_threshold: 0.02
+bank_max_signatures: 30000
+cov_shrinkage: 0.1
+learning_rate: 0.001
+batch_size: 128
+max_epochs: 20
+patience: 6
+context_loss_weight: 0.5
+mask_probability: 0.25
+path_weights: [0.3333333333333333, 0.3333333333333333, 0.3333333333333333]
+residual_weights: [0.5, 0.5]
+top_q: 3
+proxy_margin: 0.06
+proxy_quantile: 0.99
+warmup_fraction: 0.05
+warmup_quantile: 0.99
+proxy_severities: [0.25, 0.5, 1.0]
+proxy_fraction: 0.1
+seeds: [42, 43, 44]
